@@ -13,29 +13,31 @@
         <link rel="stylesheet" href="https://kit.fontawesome.com/3d2216f897.css" crossorigin="anonymous">
     </head>
     <body>
-        <div id="rectangle"></div>
         <header>
-        <img src="images/logo/Booki.png" alt="logo" class="logo"/>
-        <nav>
-            <ul>
-                <li id="nav_element_1"><a href="#hebergement_marseille">Hébergements</a></li>
-                <li id="nav_element_2"><a href="#activite">Activités</a></li>
-            </ul>
-        </nav>
+            <img src="images/logo/Booki.png" alt="logo" class="logo"/>
+            <nav id="menu"> 
+                
+                <a class="menu-element" href="#accommodation-marseille"><h2 class="menu-element-1 font-little-title">Hébergements</h2></a>
+                <a class="menu-element" href="#activity"><h2 class="menu-element-1 font-little-title">Activités</h2></a>
+                
+            </nav>
        </header> 
        
        <main>
-            <section>   <!-- section 1 title -->
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p class="sous_titre">En plein centre-ville ou en pleine nature</p>
+            <section id="introduction">   <!-- section 1 title -->
+            <h1 id="title1">Trouver votre hébergement pour des vacances de rêve</h1>
+            <p class="font-little-title subtitle">En plein centre-ville ou en pleine nature</p>
             </section>
            
-            <section>   <!-- section 2 search-->
+            <section id="search">   <!-- section 2 search-->
                     <!-- rajouter balise img ou div avant le formulaire + faire css input -->
                     <form method="get" action="">
-                        <p>
-                            <input type="search" name="search_holidays" id="search_holidays" placeholder="Marseille, France">
-                            <input type="submit" value="Rechercher" id="button_search">
+                        <p id="box-search-holidays">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="search" name="search-holidays" id="search-holidays" placeholder="Marseille, France">
+                        </p>
+                        <p id="box-button-search">    
+                            <input type="submit" value="Rechercher" id="button-search">
                         </p>
                     </form>
             </section>

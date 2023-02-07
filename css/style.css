@@ -1,125 +1,135 @@
+.font-little-title {        /* Police petit titre */         
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    max-width: 162px;
+}
+
+.font-little-title:hover {
+    font-weight: 500;
+}
+
+.essai {
+    font-weight:900;
+}
+
 body {
-    position: relative;
-    width: 1440px;
-    height: 1884px;
+    max-width: 1440px;
     background: #FFFFFF;
-}
-
-#rectangle {
-    position: absolute;
-    width: 162px;
-    height: 2px;
-    left: 1092px;
-    top: 0px;
-    background: #0065FC;
-}
-
-header {
-    width: 100%;
-    position: relative;
     display: flex;
-    padding-right: 77px;
+    flex-direction: column;
+    padding-left: 3.93%;
+    padding-right: 3.93%;
+}
+
+header {                               /*  header   */
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
 }
 
 .logo{
-    position: absolute;
     width: 61.09px;
     height: 19px;
-    left: 0px;
-    top: 0px;
     margin-top: 44px;
-    margin-left: 55px;
 }
 
-nav {
-    position: absolute;
+#menu {                               /*    Menu   */
     width: 381px;
-    height: 19px;
-    left: 982px;
-    top: 48px;
-}
-
-
-ul {
-    display: flex;
+    height: 67px;
+    white-space: nowrap;
     list-style-type: none;
+    display: flex;
+    justify-content:right;
 }
 
-a {
+.menu-element {
     text-decoration: none;
+    width: 162px;
+    height: 65px;
+    display: inline-block;
+    border-top: 2px #FFFFFF solid;
+    box-sizing: border-box;
 }
 
-a:link {
+.menu-element:link {
     color: black;
 }
 
-a:visited {
+.menu-element:visited {
     color: black;
 }
 
-a:hover {
+.menu-element:hover {
     color: #0065FC;
+    border-top: 2px #0065FC solid;   
 }
 
-#nav_element_1 {
-    width: 113px;
-    height: 19px;
-    left: 138px;
-    position: absolute;
-    left: 36.22%;
-    right: 34.12%;
-    top: 0%;
-    bottom: 0%;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center; 
-}
-
-#nav_element_2 {
-    width: 63px;
-    height: 19px;
-    margin-left: 67px;
-    position: absolute;
-    left: 83.46%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.menu-element-1 {
     text-align: center;
+    margin-top: 46px;
 }
 
-h1 {
-    position: absolute;
-    width: 575px;
-    height: 26px;
-    left: 55px;
-    top: 126px;
+
+
+
+main {                                    /* Main   */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 63px;
+}
+
+#introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+#title1 {
+    max-width: 575px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 1.4em; 
     color: #000000;
+    margin-bottom: 0px;
 }
 
-.sous_titre {
-    position: absolute;
-    width: 296px;
-    height: 19px;
-    left: 55px;
-    top: 160px;
+.subtitle {
+    max-width: 296px;
+    color: #000000;
+    margin-top: 8px;
+    line-height: 18.78px;
+}
+
+#search {    
+    display: flex;
+    flex-direction: row;
+
+    border: 2px yellow solid;
+}
+
+#box_search_holidays {
+    width: 332px;
+    height: 49px;
+}
+
+#search_holidays {
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
 
+#box_button_search {
+
+}
+
+#button_search {
+    
+}
