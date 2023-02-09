@@ -6,11 +6,8 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://kit.fontawesome.com/3d2216f897.css" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3d2216f897.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -25,25 +22,35 @@
        
        <main>
             <section id="introduction">   <!-- section 1 title -->
-            <h1 id="title1">Trouver votre hébergement pour des vacances de rêve</h1>
+            <h1 class="title1">Trouver votre hébergement pour des vacances de rêve</h1>
             <p class="font-little-title subtitle">En plein centre-ville ou en pleine nature</p>
             </section>
-           
+            
             <section id="search">   <!-- section 2 search-->
-                    <!-- rajouter balise img ou div avant le formulaire + faire css input -->
-                    <form method="get" action="">
-                        <p id="box-search-holidays">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <input type="search" name="search-holidays" id="search-holidays" placeholder="Marseille, France">
+
+                    <form method="get" action="" class="search-form">
+                        <p class="image-icone-temporaire form-paragraph"><i class="fa-solid fa-location-dot"></i></p>
+                        <p class="form-paragraph">
+                            <input type="search" name="search-holidays" class="font-middle-title box-search-holidays" placeholder="Marseille, France">
                         </p>
-                        <p id="box-button-search">    
-                            <input type="submit" value="Rechercher" id="button-search">
+                        <p class="box-button-search form-paragraph">    
+                            <input type="submit" value="Rechercher" class="button-search font-middle-title">
                         </p>
                     </form>
             </section>
             
             <section>    <!-- section 3 filter-->
-
+                    <div class="box-filters">
+                        <div class="title-filters"><p class="font-middle-title">Filtres</p></div>
+                        <div class="box-different-filters"><i class="fa-solid fa-money-bill-1-wave icon-blue"></i><p class="font-middle-title filters-font">Economique</p></div>
+                        <div class="box-different-filters"><i class="fa-solid fa-person icon-blue"></i><p class="font-middle-title filters-font">Familial</p></div>
+                        <div class="box-different-filters"><i class="fa-solid fa-heart icon-blue"></i><p class="font-middle-title filters-font">Romantique</p></div>
+                        <div class="box-different-filters"><i class="fa-solid fa-dog icon-blue"></i><p class="font-middle-title filters-font">Animaux autorisés</p></div>
+                    </div>
+                    <div class="filters-subtitle">
+                        <p class="icon-info"><i class="fa-solid fa-info icon-blue"></i></p>
+                        <p class="font-little-title filters-subtitle-paragraph">Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
             </section>
 
             <section>    <!-- section 4 hebergement & les plus populaire à réfléchir si on ressort du main title et search-->   
