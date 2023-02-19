@@ -5,8 +5,10 @@ html {
 body {
     width: 90%;
     max-width: 1440px;
-    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0px;
+    padding-bottom: 0px;    
     padding-left: 50px;
     padding-right: 50px;
     background: #FFFFFF;
@@ -68,7 +70,7 @@ header {                               /*  header   */
 }
 
 #menu {                               /*    Menu   */
-    width: 26.46%;
+    width: 30%;
     height: 67px;
     display: flex;
     justify-content:right;
@@ -98,7 +100,7 @@ header {                               /*  header   */
 }
 
 .menu-element-1 {
-    text-align: center;
+    text-align: right;
     margin-top: 46px;
 }
 
@@ -418,8 +420,8 @@ main {                                    /* Main   */
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-.section-activity {                     /*      SECTION ACTIVITES       */
+              
+.article-activity {                     /*      SECTION ACTIVITES       */
     width: 100%;
     height: 496px;
     margin-top: 60px;
@@ -490,7 +492,6 @@ main {                                    /* Main   */
 @media all and (min-width: 768px) and (max-width: 992px) {
     body {
         width: 85%;
-        max-width: 992;
         padding-bottom: 0px;
     }
 
@@ -511,7 +512,7 @@ main {                                    /* Main   */
     }
 
     .cost-accommodation {
-        white-space: wrap;
+        white-space: normal;
     }
 
     .position-popular-name {
@@ -570,8 +571,9 @@ main {                                    /* Main   */
     
     .menu-element-1 {
         margin-top: 20px;
+        text-align: center;
     }
-
+    
     main {                          /*     MAIN         */
         margin-top: 0px;
     }
@@ -592,13 +594,14 @@ main {                                    /* Main   */
     }
 
     #search {                      /*    section   search   */
-        width:90%;
-        margin-left: 20px;
-        margin-right: 20px;
+        width:100%;
+        margin-bottom: 24px;
     }
     
     .search-form {
         width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .search-input-responsive-width {
@@ -614,13 +617,13 @@ main {                                    /* Main   */
         text-align: center;
     }
     
-    .filter-box-height {
+    .filter-box-height {                    /* section filters  */
+        width: 100%;
         padding-top: 0px;
         padding-bottom: 30px;
     }
 
-    .box-filters {                      /* section filters  */
-        width: 90%;
+    .box-filters {                      
         margin-left: 20px;
         margin-right: 20px;
         height:188px;
@@ -632,7 +635,7 @@ main {                                    /* Main   */
 
     .title-filters {
         width: 90%;
-        padding-top: 0px;
+        height: 21px;
     }
 
     .box-different-filters {
@@ -652,39 +655,49 @@ main {                                    /* Main   */
         margin-bottom: 0px;
         padding-bottom: 0px;
     } 
-    .box-accommodation-popular {
-        width: 90%;
-        margin-left: 20px;
-        margin-right:20px;
-        padding-top: 0px;
-        border-radius: 0px;
-    }
 
-    .box-accommodation {
+    .box-accommodation-popular {
+        width: 100%;
+        padding-top: 28px;
+        border-radius: 0px;
         padding-left: 0px;
         padding-right: 0px;
     }
 
+    .header-popular {
+        margin-right: 20px;
+    }
+
+    .popular-title-position {
+        margin-left: 20px;
+        margin-right:20px;
+    }
+
     .grid-card-popular {
         margin-top: 0px;
+        margin-left: 20px;
+        margin-right:20px;
     }
 
     .accommodation-title-position {
         margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right:20px;
     }
 
     .box-accommodation { 
         height: 1299px;   
         background: #FFFFFF;
-        padding-top: 0px;
     }
 
     .cost-accommodation {
-        white-space: wrap;
+        white-space: normal;
     }
 
     .grid-card-accommodation {
         margin-top: 19px;
+        margin-left: 20px;
+        margin-right:20px;
         grid-template-columns: 1fr;
         row-gap: 12px;
     }
@@ -693,21 +706,26 @@ main {                                    /* Main   */
         display: none;
     }
 
-    .section-activity {                     /*  SECTION ACTIVITES */
-        width: 90%;
-        margin-left: 20px;
-        margin-right:20px;
+    .article-activity {                     /*  SECTION ACTIVITES */
         margin-top: 105px;
         margin-bottom: 0px;
-        padding-top:0px;
-        padding-bottom: 0px;
+        padding-top:50px;
+        padding-bottom: 40px;
         height: 886px;
     }
 
-    .activity-list {                                
+    .activity-title-margin {
+        margin-left: 20px;
+        width: 30%;
+    }
+
+    .activity-list { 
+        width:90%;                               
         grid-template-columns: 1fr;
         grid-template-rows: 190px;
         gap: 24px;
+        margin-left: 20px;
+        margin-right:20px;
     }
 
     .card-activity {
