@@ -199,6 +199,8 @@ main {                                    /* Main   */
 .hidden {
     display: none;
     color: #FFFFFF;
+    border: hidden;
+    background: #0065FC;
 }
 
 .box-filters {                      /* section filters  */
@@ -472,7 +474,11 @@ main {                                    /* Main   */
     padding-top: 45px;
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.footer-individual-box {
+    width: 25%;
 }
 
 .footer-list-properties {
@@ -535,6 +541,13 @@ main {                                    /* Main   */
         margin-top: 34px;
         margin-bottom: 0px;
     }
+
+    .card-activity-title_margin { 
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 8px;
+    }
+
 }
 
 @media all and (max-width: 767px) {
@@ -741,6 +754,10 @@ main {                                    /* Main   */
         height: 501px;
         width: 100%;
         margin-top: 45px;
+    }
+
+    .footer-individual-box {
+        width: 100%;
     }
 
     .footer-title {
